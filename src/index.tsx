@@ -1,12 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Switch, Route } from "react-router";
+import { BrowserRouter } from "react-router-dom";
+import moment from 'moment';
+import { Home } from './views';
+
+
+const MainApp = (props: any) => {
+  console.info(`RENDER : MainApp ${moment(process.env.BUILD_DATE).format("DD.MM.YYYY-HH:mm")}`);
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route component={Home} />
+      </Switch>
+    </BrowserRouter>
+  );
+};
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MainApp />
   </React.StrictMode>,
   document.getElementById('root')
 );
