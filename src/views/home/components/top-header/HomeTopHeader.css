@@ -19,8 +19,9 @@
     height: 2vh !important
 }
 
-.col .anticon {
+.col a .anticon {
     font-size: 22px;
+    color: #c2c2c2;
 }
 
 .last {
