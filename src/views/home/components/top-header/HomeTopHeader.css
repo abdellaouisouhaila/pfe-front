@@ -1,0 +1,24 @@
+.top-header {
+    height: 5vh;
+    width: 100vw;
+    background-Color: #000;
+}
+
+.col {
+    margin: auto 0;
+}
+
+.col h3 {
+    color: #c2c2c2;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.col .divider {
+    background: #c2c2c2;
+    height: 2vh !important
+}
+
+.col .anticon {
+    font-size: 22px;
+}

@@ -1,19 +1,25 @@
-import { Col, Row } from "antd";
+import { Col, Divider, Row, Space } from "antd";
+import { FacebookFilled, TwitterSquareFilled, InstagramFilled } from "@ant-design/icons";
+import "./HomeTopHeader.css";
 import React from "react";
 
-
-
 export const HomeTopHeader = () => {
-    return (
-        <Row style={{
-            height: "6vh",
-            backgroundColor: "#000",
-            color: "#fff"
-        }}>
-            <Col span={2} ></Col>
-            <Col push={2} span={6} style={{
-                marginLeft:"5vw"
-            }} >Livraison gratuite pour les commandes de plus de 199 TL!</Col>
-        </Row>
-    )
-}
+  return (
+    <Row className="top-header">
+      <Col push={2} span={18} className="col">
+        <h3>Livraison gratuite pour les commandes de plus de 199 TL!</h3>
+      </Col>
+      <Col span={4} className="col">
+        <h3>
+          <Space size={20}>
+            Kargom Nerede?
+            <FacebookFilled />
+            <Divider className="divider" type="vertical" />
+            <TwitterSquareFilled />
+            <InstagramFilled />
+          </Space>
+        </h3>
+      </Col>
+    </Row>
+  );
+};

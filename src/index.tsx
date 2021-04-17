@@ -6,6 +6,8 @@ import { Switch, Route } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 import moment from 'moment';
 import { Home } from './views';
+import 'antd/dist/antd.css';
+
 
 
 const MainApp = (props: any) => {
