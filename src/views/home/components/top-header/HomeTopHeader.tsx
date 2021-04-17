@@ -6,10 +6,10 @@ import React from "react";
 export const HomeTopHeader = () => {
   return (
     <Row className="top-header">
-      <Col push={2} span={18} className="col">
+      <Col push={2} span={16} className="col">
         <h3>Livraison gratuite pour les commandes de plus de 199 TL!</h3>
       </Col>
-      <Col span={4} className="col">
+      <Col span={6} className="col last"  >
         <h3>
           <Space size={20}>
             Kargom Nerede?
