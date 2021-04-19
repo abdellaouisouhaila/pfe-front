@@ -35,13 +35,14 @@ export const HomeHeader = () => {
       </Col>
       <Col push={2} span={4} className="col-auth">
         <h3>
-          <Space size={20}>
-            <UserOutlined />
-            <span>IDENTIFIANT</span>
-
-            <UserAddOutlined />
-            <span>S'INSCRIRE</span>
-          </Space>
+          <span>
+            <Space>
+              <UserOutlined />
+              <span>IDENTIFIANT</span>
+              <UserAddOutlined className="col-auth-icon" />
+              <span>S'INSCRIRE</span>
+            </Space>
+          </span>
         </h3>
       </Col>
     </Row>
