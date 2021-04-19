@@ -13,10 +13,10 @@ export const HomeTopHeader = () => {
         <h3>
           <Space size={20}>
             Kargom Nerede?
+            <Divider className="divider" type="vertical" />
             <a rel="noreferrer" target="_blank" href="https://www.facebook.com/">
               <FacebookFilled />
             </a>
-            <Divider className="divider" type="vertical" />
             <a rel="noreferrer" target="_blank" href="https://www.twitter.com/">
               <TwitterSquareFilled />
             </a>
