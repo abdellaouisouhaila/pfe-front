@@ -40,8 +40,8 @@ export const HomeHeader = () => {
             fontSize: "22px",
             width:"100%",
             border:"none",
-            background:"#f5f5f5",
-            height:"6vh",
+            background:"#DCDCDC",
+            height:"8vh",
             borderRadius:"1em",
             padding:"6px"
             
